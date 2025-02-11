@@ -3,7 +3,7 @@ name: Octane GitHub Actions Integration
 on:
   workflow_run:
     workflows: [TestNG GitHub Actions Demo]
-    types: [requested, in_progress, completed]
+    types: [requested, completed]
   pull_request:
     types: [opened, edited, closed, reopened]
 
