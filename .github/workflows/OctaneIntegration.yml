@@ -27,6 +27,7 @@ jobs:
           githubToken: ${{secrets.GITHUB_TOKEN}}
           serverBaseUrl: https://github.com/safa50/TestNGAdderMaven
           pipelineNamePattern: '${workflow_name}'
+          testingFramework: testNG
           unitTestResultsGlobPattern: "**/*.xml"
           #gherkinTestResultsGlobPattern: <pattern_for_gherkin_test_result_path>
   
