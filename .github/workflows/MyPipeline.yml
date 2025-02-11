@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v3
       - uses: actions/setup-java@v3
         with:
-          java-version: '11'
+          java-version: '17'
           distribution: 'temurin'
       - run: mvn clean install
 
@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v3
       - uses: actions/setup-java@v3
         with:
-          java-version: '11'
+          java-version: '17'
           distribution: 'temurin'
       - run: mvn --batch-mode --update-snapshots verify
       - run: mdir reports && cp test-output/*/*test*.xml reports
