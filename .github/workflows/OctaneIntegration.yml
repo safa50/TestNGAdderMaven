@@ -2,7 +2,7 @@ name: Octane GitHub Actions Integration
 
 on:
   workflow_run:
-    workflows: [TestNGAdderMaven]
+    workflows: [TestNG GitHub Actions Demo]
     types: [requested, in_progress, completed]
   pull_request:
     types: [opened, edited, closed, reopened]
